@@ -74,18 +74,7 @@ b {
   font-size: 17px;
 }
 
-.cursor {
-  display: inline-block;
-  width: 10px; /* Adjust width as needed */
-  background-color: black; /* Change color as needed */
-  animation: blink 1s step-end infinite;
-}
 
-@keyframes blink {
-  50% {
-    background-color: transparent;
-  }
-}
 
 @media only screen and (max-width: 600px) {
   #intro {

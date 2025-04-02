@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Intro.css";
-import "../styles/Global.css";
+// import "../styles/Global.css";
 import Typist from "react-typist-component";
 import EmailIcon from "@mui/icons-material/Email";
 import FadeInSection from "./FadeInSection";

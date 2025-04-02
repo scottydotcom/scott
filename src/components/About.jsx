@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/About.css";
-import "../styles/Global.css";
+// import "../styles/Global.css";
 import FadeInSection from "./FadeInSection";
 
 class About extends React.Component {

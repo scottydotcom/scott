@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import Intro from "./components/Intro"
 import About from "./components/About";
 import "./App.css";
+import "./styles/Global.css";
 
 function App() {
   return (
