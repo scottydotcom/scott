@@ -12,7 +12,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
-const drawerWidth = 250;
+const drawerWidth = 240;
 const navItems = ["Home", "About", "Experience", "Projects"];
 
 function DrawerAppBar(props) {
@@ -24,13 +24,13 @@ function DrawerAppBar(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center"}}>
       <Typography variant="h6" sx={{ my: 2 }}>
         <img src="/images/tangerine.png" alt="" width={40} />
       </Typography>
       <List>
         {navItems.map((item) => (
-          <ListItemButton key={item} sx={{ textAlign: "center" }}>
+          <ListItemButton key={item} sx={{ textAlign: "center", color: "#ccd6f6" }}>
             <ListItemText primary={item} />
           </ListItemButton>
         ))}
