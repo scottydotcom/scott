@@ -15,7 +15,7 @@ import Button from "@mui/material/Button";
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Experience", "Projects"];
 
-function DrawerAppBar(props) {
+function NavBar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -89,4 +89,4 @@ function DrawerAppBar(props) {
   );
 }
 
-export default DrawerAppBar;
+export default NavBar;
