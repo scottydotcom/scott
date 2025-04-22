@@ -1,0 +1,27 @@
+
+.about-description ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 0.25fr); /* Create 3 equal columns */
+  gap: 5px; /* Adjust this value to reduce the space between items */
+}
+
+.about-description li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 18px;
+  color: var(--slate);
+}
+
+/* .about-description li::before {
+  content: "▹    ";
+  color: var(--cornflower-blue);
+  position: absolute;
+  left: 0;
+} */
+
+.about-description li::before {
+  content: "➥    "; /* Arrow */
+  position: absolute;
+  left: 0;
+}

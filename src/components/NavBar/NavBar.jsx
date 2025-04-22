@@ -24,7 +24,7 @@ function NavBar(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center"}}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
         <img src="/images/tangerine.png" alt="" width={40} />
       </Typography>
@@ -51,12 +51,13 @@ function NavBar(props) {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: "none" } }}
           >
-            <MenuIcon sx ={{color: "#ccd6f6"}}/>
+            <MenuIcon sx={{ color: "#ccd6f6" }} />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ display: { xs: "none", sm: "block" }, mr: 2 }}>
             <img src="/images/tangerine.png" alt="" width={40} />
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "flex" }, justifyContent: "center" }}>
+            {/* flexGrow: 1 -> this allows tangerine icon to be placed to the left */}
             {navItems.map((item) => (
               <Button key={item} sx={{ color: "#ccd6f6" }}>
                 {item}
