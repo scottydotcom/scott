@@ -1,0 +1,13 @@
+:root {
+  --smoke-black: #131419;
+  --ash-black: #1c1d24;
+  --ash-grey: #363744;
+  --slate: #8892b0;
+  --light-slate: #ccd6f6;
+  --cornflower-blue: #7391c8;
+}
+
+html, body{
+  background-color: var(--smoke-black);
+}
+

@@ -1,0 +1,126 @@
+/* General Styling */
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background: linear-gradient(to right, #1e1e2f, #5b5b98); */
+  text-align: center;
+  padding: -20px;
+}
+
+/* Content Box */
+.intro-content {
+  max-width: 700px;
+  padding: 40px;
+}
+.intro-name {
+  color: var(--cornflower-blue);
+}
+
+.highlight{
+  color: var(--cornflower-blue)
+}
+
+/* Typography */
+h1 {
+  font-size: 76px;
+  font-weight: bold;
+  margin-bottom: -20px;
+  color: var(--slate);
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--slate);
+}
+
+p {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--slate);
+}
+
+/* media buttons */
+.contact-box {
+  width: 200px; /* Adjust as needed */
+  padding: 5px 15px;
+  border: 1px solid var(--cornflower-blue);
+  border-radius: 4px;
+  margin: 0 auto; /* Centers the box horizontally */
+  display: block; /* Ensure it behaves like a block element */
+  text-align: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: var(--slate);
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-icons a {
+  color: var(--slate);
+  font-size: 2rem;
+  transition: 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: var(--light-slate);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .intro-content {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .intro-content {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
