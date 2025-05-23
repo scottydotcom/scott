@@ -1,9 +1,8 @@
 import React from "react";
 import "./introStyles.css";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import EmailIcon from "@mui/icons-material/Email";
 import FadeAnimation from "../FadeAnimation/FadeAnimation";
+import { FaGithubSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 const Intro = () => {
   return (
@@ -27,13 +26,13 @@ const Intro = () => {
             <h3>Connect with me</h3>
             <div className="contact-icons">
               <a href="https://github.com/scottydotcom" target="_blank" rel="noopener noreferrer">
-                <GitHubIcon fontSize="large" />
+                <FaGithubSquare />
               </a>
               <a href={import.meta.env.VITE_LINKEDIN_URL} target="_blank" rel="noopener noreferrer">
-                <LinkedInIcon fontSize="large" />
+                <FaLinkedin />
               </a>
               <a href={`mailto:${import.meta.env.VITE_EMAIL}`}>
-                <EmailIcon fontSize="large" />
+                <SiGmail  />
               </a>
             </div>
             {/* </FadeAnimation> */}

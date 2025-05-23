@@ -1,0 +1,65 @@
+.about {
+  min-height: 50vh;
+  margin: auto;
+  max-width: 1000px;
+  padding-top: 100px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-blurb {
+  color: var(--slate);
+  max-width: 600px;
+  font-size: 21px;
+  text-align: justify;
+  margin: 0; /* Helps with justification */
+}
+
+.about-blurb ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left; /* Ensures the text aligns left */
+  display: grid;
+  flex-direction: column; /* Ensures vertical stacking */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+.about-blurb li {
+  position: relative;
+  padding-left: 25px;
+  font-size: 18px;
+  color: var(--slate);
+}
+
+.about-blurb li::before {
+  content: "➥    ";
+  position: absolute;
+  color: var(--cornflower-blue);
+  left: 0;
+}
+
+.about-selfie {
+  padding-left: 40px;
+}
+
+.about-selfie img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 30px;
+  box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
+  border: none;
+}
+
+@media only screen and (max-width: 788px) {
+  .about-selfie img {
+    max-width: 200px;
+  }
+}
+
+.about-selfie:hover {
+  transform: translateY(-7px);
+}
