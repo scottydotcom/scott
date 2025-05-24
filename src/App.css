@@ -6,7 +6,6 @@
   --light-slate: #ccd6f6;
   --cornflower-blue: #7391c8;
 }
-
 html,
 body {
   background-color: var(--smoke-black);
