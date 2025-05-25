@@ -71,6 +71,6 @@
 }
 
 .card:hover .card-tag {
-  background-color: var(--light-slate); /* Change to the desired color */
-  color: var(--ash-black); /* Change text color if needed */
+  background-color: var(--ash-black);
+ 
 }
