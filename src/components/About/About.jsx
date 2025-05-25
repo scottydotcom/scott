@@ -41,7 +41,7 @@ const About = () => {
                 </li>
               </ul>
             </FadeAnimation>
-            {"Outside of work these are some of my hobbies I have: "}
+            {"I'm a couch potato homebody, but these are my hobbies: "}
             <FadeAnimation delay="100ms">
               <ul className="hobby-stack">
                 <li>
@@ -51,26 +51,27 @@ const About = () => {
                   <SiPlaystation /> Gaming
                 </li>
                 <li>
-                  <LuLaptop /> PC & Tech
-                </li>
-                <li>
-                  <RiBookMarkedLine /> Reading
-                </li>
-                <li>
-                  <LuDumbbell /> Fitness
-                </li>
-                <li>
-                  <FaRegLightbulb /> Designing
+                  <LuLaptop /> Techie
                 </li>
                 <li>
                   <FaHamburger /> Foodie
                 </li>
                 <li>
+                  <LuDumbbell /> Fitness
+                </li>
+                <li>
                   <RiBilliardsLine /> Pool
                 </li>
                 <li>
-                  <FaHome /> Homebody
+                  <FaHome /> Lifestyle
                 </li>
+                <li>
+                  <FaRegLightbulb /> Design
+                </li>
+                <li>
+                  <RiBookMarkedLine /> Reading
+                </li>
+                {/* lifestyle, techie */}
               </ul>
             </FadeAnimation>
           </div>

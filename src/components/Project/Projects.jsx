@@ -30,24 +30,24 @@ const Projects = () => {
   ];
 
   return (
-    <div className="projects">
-      {projectDetails.map((project, index) => (
-        <div className="card" key={index}>
-          <img src={project.imageUrl} alt="Card Image" className="card-image" />
-          <div className="card-content">
-            <header className="card-header">{project.title}</header>
-            <div className="card-body">{project.description}</div>
-            <footer className="card-footer">
-              {project.tags.map((tag, index) => (
-                <span key={index} className="card-tag">
-                  {tag}
-                </span>
-              ))}
-            </footer>
+      <div className="projects">
+        {projectDetails.map((project, index) => (
+          <div className="card" key={index}>
+            <img src={project.imageUrl} alt="Card Image" className="card-image" />
+            <div className="card-content">
+              <header className="card-header">{project.title}</header>
+              <div className="card-body">{project.description}</div>
+              <footer className="card-footer">
+                {project.tags.map((tag, index) => (
+                  <span key={index} className="card-tag">
+                    {tag}
+                  </span>
+                ))}
+              </footer>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
   );
 };
 
