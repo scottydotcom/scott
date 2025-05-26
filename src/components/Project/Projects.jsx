@@ -1,14 +1,18 @@
 import react from "react";
 import "./projectStyles.css";
 import FadeAnimation from "../FadeAnimation/FadeAnimation";
+import { FaGithubSquare } from "react-icons/fa";
+import { TbBrowserMaximize } from "react-icons/tb";
 
 const Projects = () => {
   const projectDetails = [
     {
-      title: "Nippon Luxe",
-      description: "This is a simple horizontal card component built with React.",
-      imageUrl: "https://i.pinimg.com/736x/de/18/63/de186331cbae193d50f2801026101ea6.jpg",
+      title: "Earths Realm",
+      description: "A website that shows users parks & recreation all across America.",
+      imageUrl: "https://github.com/scottydotcom/earths-realm/raw/main/assets/home.png",
       tags: ["JavaScript", "React", "CSS"],
+      link: "https://github.com/scottydotcom/earths-realm",
+      open: "https://earthsrealm.netlify.app/",
     },
     {
       title: "Project 2",
@@ -41,7 +45,21 @@ const Projects = () => {
                 <img src={project.imageUrl} alt="Card Image" className="card-image" />
                 {/* <FadeAnimation delay="200ms"> */}
                 <div className="card-content">
-                  <header className="card-header">{project.title}</header>
+                  <header className="card-header">
+                    <span>{project.title}</span>
+                    <div className="icon-container">
+                      {project.open && (
+                        <a href={project.open} target="_blank" rel="noopener noreferrer" className="icon">
+                          <TbBrowserMaximize />
+                        </a>
+                      )}
+                      {project.link && (
+                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="icon">
+                          <FaGithubSquare />
+                        </a>
+                      )}
+                    </div>
+                  </header>
                   <div className="card-body">{project.description}</div>
                   <footer className="card-footer">
                     {project.tags.map((tag, index) => (
@@ -62,3 +80,18 @@ const Projects = () => {
 };
 
 export default Projects;
+
+//   <span>{project.title}</span>
+//   <div className="icon-container">
+//     {project.link && (
+//       <a href={project.link} target="_blank" rel="noopener noreferrer" className="icon">
+//         <FaGithubSquare />
+//       </a>
+//     )}
+//     {project.open && (
+//       <a href={project.open} target="_blank" rel="noopener noreferrer" className="icon">
+//         <FaLinkedin />
+//       </a>
+//     )}
+//   </div>
+// </header>

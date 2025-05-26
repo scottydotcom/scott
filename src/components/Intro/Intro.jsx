@@ -2,7 +2,6 @@ import React from "react";
 import "./introStyles.css";
 import FadeAnimation from "../FadeAnimation/FadeAnimation";
 import { FaGithubSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
 
 const Intro = () => {
   return (
@@ -23,7 +22,7 @@ const Intro = () => {
         <FadeAnimation delay="200ms">
           <div className="contact-box">
             {/* <FadeAnimation delay="300ms"> */}
-            <h3>Connect with me</h3>
+            <h3>Contact me</h3>
             <div className="contact-icons">
               <a href="https://github.com/scottydotcom" target="_blank" rel="noopener noreferrer">
                 <FaGithubSquare />
@@ -32,7 +31,7 @@ const Intro = () => {
                 <FaLinkedin />
               </a>
               <a href={`mailto:${import.meta.env.VITE_EMAIL}`}>
-                <SiGmail  />
+                <FaEnvelope  />
               </a>
             </div>
             {/* </FadeAnimation> */}
