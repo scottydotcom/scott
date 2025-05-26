@@ -9,7 +9,7 @@ const Projects = () => {
     {
       title: "Earths Realm",
       description: "A website that shows users parks & recreation all across America.",
-      imageUrl: "https://github.com/scottydotcom/earths-realm/raw/main/assets/home.png",
+      imageUrl: "src/components/assets/images/earth-realm.png",
       tags: ["JavaScript", "React", "CSS"],
       link: "https://github.com/scottydotcom/earths-realm",
       open: "https://earthsrealm.netlify.app/",
