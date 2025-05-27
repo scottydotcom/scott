@@ -9,6 +9,7 @@
 html,
 body {
   background-color: var(--smoke-black);
+   scroll-behavior: smooth;
 }
 
 .App {

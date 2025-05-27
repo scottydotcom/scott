@@ -7,30 +7,36 @@ import { TbBrowserMaximize } from "react-icons/tb";
 const Projects = () => {
   const projectDetails = [
     {
+      title: "Midnight Koi",
+      description: "Personal vscode theme designed to enhance coding focus visually.",
+      imageUrl: "src/components/assets/images/koi.png",
+      tags: ["JSON", "Node.js", "Yeoman"],
+      link: "https://github.com/scottydotcom/midnight-koi",
+      open: "",
+    },
+    {
+      title: "Enso",
+      description: "Discord bot thats positive affirmation to users.",
+      imageUrl: "src/components/assets/images/enso.png",
+      tags: ["JavaScript", "Node.js", "Discord.js"],
+      link: "https://github.com/scottydotcom/Enso",
+      open: "",
+    },
+    {
+      title: "Quick Chat",
+      description: "A blog that allows you to interact and talk with users in real-time.",
+      imageUrl: "src/components/assets/images/QC.png",
+      tags: ["JavaScript", "HTML", "CSS"],
+      link: "https://github.com/scottydotcom/quickchat",
+      open: "https://quickchatblog.netlify.app/",
+    },
+    {
       title: "Earths Realm",
       description: "A website that shows users parks & recreation all across America.",
       imageUrl: "src/components/assets/images/earth-realm.png",
-      tags: ["JavaScript", "React", "CSS"],
+      tags: ["JavaScript", "HTML", "CSS"],
       link: "https://github.com/scottydotcom/earths-realm",
       open: "https://earthsrealm.netlify.app/",
-    },
-    {
-      title: "Project 2",
-      description: "This is a simple horizontal card component built with React.",
-      imageUrl: "https://i.pinimg.com/736x/de/18/63/de186331cbae193d50f2801026101ea6.jpg",
-      tags: ["JavaScript", "React", "CSS"],
-    },
-    {
-      title: "Project 3",
-      description: "This is a simple horizontal card component built with React.",
-      imageUrl: "https://i.pinimg.com/736x/de/18/63/de186331cbae193d50f2801026101ea6.jpg",
-      tags: ["JavaScript", "React", "CSS"],
-    },
-    {
-      title: "Project 4",
-      description: "This is a simple horizontal card component built with React.",
-      imageUrl: "https://i.pinimg.com/736x/de/18/63/de186331cbae193d50f2801026101ea6.jpg",
-      tags: ["JavaScript", "React", "CSS"],
     },
   ];
 
