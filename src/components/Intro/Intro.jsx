@@ -9,6 +9,7 @@ const Intro = () => {
       <div className="intro-content">
         <FadeAnimation>
           <h1>
+          {/* <img src="src/components/assets/images/koi-icon.png" alt="" /> */}
             hi, <span className="intro-name"> scott </span> here
           </h1>
         </FadeAnimation>
