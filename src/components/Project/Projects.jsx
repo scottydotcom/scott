@@ -86,18 +86,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-//   <span>{project.title}</span>
-//   <div className="icon-container">
-//     {project.link && (
-//       <a href={project.link} target="_blank" rel="noopener noreferrer" className="icon">
-//         <FaGithubSquare />
-//       </a>
-//     )}
-//     {project.open && (
-//       <a href={project.open} target="_blank" rel="noopener noreferrer" className="icon">
-//         <FaLinkedin />
-//       </a>
-//     )}
-//   </div>
-// </header>
