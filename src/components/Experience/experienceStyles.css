@@ -1,11 +1,11 @@
-.project {
+.experience {
   min-height: 50vh;
   margin: auto;
   max-width: 1000px;
   padding-top: 100px;
 }
 
-.project-content {
+.experience-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -14,7 +14,7 @@
   padding-top: 30px; /* Keep your existing padding */
 }
 
-.project-card {
+.experience-card {
   display: flex;
   align-items: center;
   border: 1px solid var(--light-slate);
@@ -24,25 +24,26 @@
   background-color: var(--ash-black);
   transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
 }
-.project-card:hover {
+
+.experience-card:hover {
   transform: scale(1.1);
   background-color: var(--ash-grey); /* Change to a lighter color for the glow effect */
   /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); Add shadow for depth */
 }
 
-.card-image {
+.company-image {
   width: 150px;
   height: auto;
   border-radius: 8px;
   margin-right: 16px;
 }
 
-.projectCard-content {
+.experienceCard-content {
   display: flex;
   flex-direction: column;
 }
 
-.projectCard-header {
+.experienceCard-header {
   display: flex; /* Use flexbox for alignment */
   justify-content: space-between; /* Space between title and icon */
   align-items: center; /* Center vertically */
@@ -51,47 +52,13 @@
   color: var(--light-slate);
 }
 
-.projectCard-header a {
-  color: var(--light-slate);
-  margin-left: 8px; /* Add some space between the title and the icon */
-  display: flex; /* Ensure the icon is centered */
-  align-items: center; /* Center the icon vertically */
-}
-
-.icon-container {
-  display: flex;
-  align-items: center;
-  margin-left: 8px;
-}
-
-.icon {
-  color: var(--light-slate);
-  margin-left: 4px;
-  display: flex;
-  align-items: center;
-  font-size: 1.5rem;
-}
-
-.projectCard-body {
+.experienceCard-body {
   font-size: 1rem;
   margin-bottom: 12px;
   color: var(--slate);
 }
 
-.projectCard-footer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.projectSkills-tag {
-  background-color: var(--ash-grey);
+.experienceCard-footer {
   color: var(--light-slate);
-  padding: 4px 8px;
-  border-radius: 4px;
   font-size: 0.875rem;
-}
-
-.card:hover .projectSkills-tag {
-  background-color: var(--ash-black);
 }

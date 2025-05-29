@@ -37,12 +37,12 @@ const Experience = () => {
         {experienceData.map((exp, index) => (
           <div className="experience-card" key={index}>
             <img src={exp.imageUrl} alt="company image" className="company-image" />
-            <div className="experience-card">
-              <header className="experience-header">
+            <div className="experienceCard-content">
+              <header className="experienceCard-header">
                 <span>{exp.title}</span>
               </header>
-              <div className="experience-body">{exp.company}</div>
-              <footer className="experience-footer">{exp.duration}</footer>
+              <div className="experienceCard-body">{exp.company}</div>
+              <footer className="experienceCard-footer">{exp.duration}</footer>
             </div>
           </div>
         ))}
@@ -59,7 +59,7 @@ export default Experience;
 //     {/* <img src={project.imageUrl} alt="Card Image" className="card-image" /> */}
 //       {experienceData.map((exp, index) => (
 //         <div className="card" key={index}>
-//           <header className="card-header">
+//           <header className="project-header">
 //             <span>{exp.title}</span>
 //           </header>
 //           <div className="card-body">{exp.company}</div>

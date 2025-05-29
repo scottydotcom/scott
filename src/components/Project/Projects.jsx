@@ -47,11 +47,11 @@ const Projects = () => {
         <FadeAnimation delay="100ms">
           <div className="project-content">
             {projectDetails.map((project, index) => (
-              <div className="card" key={index}>
+              <div className="project-card" key={index}>
                 <img src={project.imageUrl} alt="Card Image" className="card-image" />
                 {/* <FadeAnimation delay="200ms"> */}
-                <div className="card-content">
-                  <header className="card-header">
+                <div className="projectCard-content">
+                  <header className="projectCard-header">
                     <span>{project.title}</span>
                     <div className="icon-container">
                       {project.open && (
@@ -66,10 +66,10 @@ const Projects = () => {
                       )}
                     </div>
                   </header>
-                  <div className="card-body">{project.description}</div>
-                  <footer className="card-footer">
+                  <div className="projectCard-body">{project.description}</div>
+                  <footer className="projectCard-footer">
                     {project.tags.map((tag, index) => (
-                      <span key={index} className="card-tag">
+                      <span key={index} className="projectSkills-tag">
                         {tag}
                       </span>
                     ))}
