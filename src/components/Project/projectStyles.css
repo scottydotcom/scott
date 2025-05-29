@@ -92,6 +92,6 @@
   font-size: 0.875rem;
 }
 
-.card:hover .projectSkills-tag {
+.project-card:hover .projectSkills-tag {
   background-color: var(--ash-black);
 }

@@ -19,7 +19,7 @@ const Experience = () => {
       company: "Code with Craig",
       title: "Front-End Freelance Developer",
       duration: "MAY 2024 - JAN 2025",
-      imageUrl: "src/components/assets/images/code-with-craig.png",
+      imageUrl: "src/components/assets/images/cwc.png",
       description: [
         "Actively contributing to the development and enhancement of my Bootcamp instructor's website, focusing on creating clear and engaging examples of JavaScript, HTML, and CSS.",
         "Coordinated with the instructor to create a seamless and visually appealing site layout, improving user experience and navigation.",
