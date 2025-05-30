@@ -44,13 +44,36 @@
 }
 
 .experienceCard-header {
-  display: flex; /* Use flexbox for alignment */
+   display: flex; /* Use flexbox for alignment */
   justify-content: space-between; /* Space between title and icon */
   align-items: center; /* Center vertically */
   font-size: 1.5rem;
   margin-bottom: 8px;
   color: var(--light-slate);
 }
+
+.pexperienceCard-header a {
+  color: var(--light-slate);
+  margin-left: 8px; /* Add some space between the title and the icon */
+  display: flex; /* Ensure the icon is centered */
+  align-items: center; /* Center the icon vertically */
+}
+
+.experience-iconContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.experience-button-icon {
+  color: var(--light-slate);
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+
 
 .experienceCard-body {
   font-size: 1rem;
@@ -61,4 +84,74 @@
 .experienceCard-footer {
   color: var(--light-slate);
   font-size: 0.875rem;
+}
+
+/* .experience-icon {
+  display: flex;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  
+  font-size: 0.875rem;
+}
+.experience-button-icon {
+  
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+} */
+
+.ReactModal__Content {
+  background-color: var(--ash-black); /* Card background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  padding: 20px; /* Inner spacing */
+  max-width: 400px; /* Maximum width of the card */
+  max-height: 450px;
+  margin: auto; /* Center the card */
+}
+
+.ReactModal__Content--after-open {
+  background-color: var(--ash-black) !important; 
+}
+/* 
+.ReactModal__Overlay {
+} */
+
+.modal-content {
+  background-color: var(--smoke-black); /* Card background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  padding: 20px; /* Inner spacing */
+  max-width: 400px; /* Maximum width of the card */
+  margin: auto; /* Center the card */
+}
+
+.modal-title-header {
+  font-size: 1.5em; /* Title font size */
+  font-weight: bold; /* Bold title */
+  margin-bottom: 10px; /* Space below title */
+}
+
+.modal-company {
+  font-size: 1.2em; /* Company font size */
+  color: gray; /* Company text color */
+  margin-bottom: 15px; /* Space below company name */
+}
+
+.modal-list {
+  list-style-type: disc; /* Bullet points for list */
+  padding-left: 20px; /* Indentation for list */
+  margin-bottom: 15px; /* Space below list */
+}
+
+.modal-list li {
+  list-style-type: none; /* Remove default bullet points */
+  margin-bottom: 5px; /* Space between list items */
+  color: var(--light-slate);
+}
+
+.modal-list li::before {
+  content: "➥    ";
 }
