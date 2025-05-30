@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./experienceStyles.css";
 import Modal from "react-modal"; // Make sure to install react-modal
 import { RiFilePaper2Fill } from "react-icons/ri";
-import { FaGithubSquare } from "react-icons/fa";
+import { IoDocumentText } from "react-icons/io5";
 
 const Experience = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -62,7 +62,7 @@ const Experience = () => {
                     }}
                     className="experience-button-icon"
                   >
-                    <RiFilePaper2Fill />
+                    <IoDocumentText/>
                   </a>
                 </div>
               </header>
