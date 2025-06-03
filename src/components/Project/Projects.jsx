@@ -48,7 +48,7 @@ const Projects = () => {
           <div className="project-content">
             {projectDetails.map((project, index) => (
               <div className="card" key={index}>
-                <img src={project.imageUrl} alt="Card Image" className="card-image" />
+                <img src={project.imageUrl} alt="Project Image" className="card-image" />
                 {/* <FadeAnimation delay="200ms"> */}
                 <div className="card-content">
                   <header className="card-header">

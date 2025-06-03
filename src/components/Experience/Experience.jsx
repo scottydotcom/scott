@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./experienceStyles.css";
+import FadeAnimation from "../FadeAnimation/FadeAnimation";
 import Modal from "react-modal"; // Make sure to install react-modal
 import { RiFilePaper2Fill } from "react-icons/ri";
 import { IoDocumentText } from "react-icons/io5";
@@ -45,54 +46,60 @@ const Experience = () => {
 
   return (
     <section className="experience">
-      <div className="section-header">/ experience</div>
-      <div className="experience-content">
-        {experienceData.map((exp, index) => (
-          <div className="experience-card" key={index}>
-            <img src={exp.imageUrl} alt="company image" className="company-image" />
-            <div className="experienceCard-content">
-              <header className="experienceCard-header">
-                <span>{exp.company}</span>
-                <div className="experience-iconContainer">
-                  <a
-                    href="#"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      openModal(exp);
-                    }}
-                    className="experience-button-icon"
-                  >
-                    <IoDocumentText/>
-                  </a>
+      <FadeAnimation>
+        <div className="section-header">/ experience</div>
+        <FadeAnimation delay="100ms">
+          <div className="experience-content">
+            {experienceData.map((exp, index) => (
+              <div className="card" key={index}>
+                <img src={exp.imageUrl} alt="Company image" className="card-image" />
+                <div className="card-content">
+                  <header className="card-header">
+                    <span>{exp.company}</span>
+                    <div className="icon-container">
+                      <a
+                        href="#"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          openModal(exp);
+                        }}
+                        // className="experience-button-icon"
+                      >
+                        <IoDocumentText />
+                      </a>
+                    </div>
+                  </header>
+                  <div className="card-body">{exp.title}</div>
+                  <footer className="card-footer">
+                    <span className="duration-tag">{exp.duration}</span>
+                  </footer>
                 </div>
-              </header>
-              <div className="experienceCard-body">{exp.title}</div>
-              <footer className="experienceCard-footer">{exp.duration}</footer>
-            </div>
-          </div>
-        ))}
-      </div>
-      <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
-        <div className="modal-content">
-          <div className="modaltitle-Header">{selectedExperience?.title}</div>
-          <div className="modal-company">{selectedExperience?.company}</div>
-          <ul className="modal-list">
-            {selectedExperience?.description.map((desc, index) => (
-              <li key={index}>{desc}</li>
+              </div>
             ))}
-          </ul>
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              closeModal();
-            }}
-            className="modal-close-link"
-          >
-            Close
-          </a>
-        </div>
-      </Modal>
+          </div>
+          <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
+            <div className="modal-content">
+              <div className="modaltitle-Header">{selectedExperience?.title}</div>
+              <div className="modal-company">{selectedExperience?.company}</div>
+              <ul className="modal-list">
+                {selectedExperience?.description.map((desc, index) => (
+                  <li key={index}>{desc}</li>
+                ))}
+              </ul>
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  closeModal();
+                }}
+                className="modal-close-link"
+              >
+                Close
+              </a>
+            </div>
+          </Modal>
+        </FadeAnimation>
+      </FadeAnimation>
     </section>
   );
 };
