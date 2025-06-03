@@ -50,18 +50,18 @@ const Experience = () => {
         <div className="section-header">/ experience</div>
         <FadeAnimation delay="100ms">
           <div className="experience-content">
-            {experienceData.map((exp, index) => (
+            {experienceData.map((workData, index) => (
               <div className="card" key={index}>
-                <img src={exp.imageUrl} alt="Company image" className="card-image" />
+                <img src={workData.imageUrl} alt="Company image" className="card-image" />
                 <div className="card-content">
                   <header className="card-header">
-                    <span>{exp.company}</span>
+                    <span>{workData.company}</span>
                     <div className="icon-container">
                       <a
                         href="#"
                         onClick={(e) => {
                           e.preventDefault();
-                          openModal(exp);
+                          openModal(workData);
                         }}
                         // className="experience-button-icon"
                       >
@@ -69,9 +69,9 @@ const Experience = () => {
                       </a>
                     </div>
                   </header>
-                  <div className="card-body">{exp.title}</div>
+                  <div className="card-body">{workData.title}</div>
                   <footer className="card-footer">
-                    <span className="duration-tag">{exp.duration}</span>
+                    <span className="duration-tag">{workData.duration}</span>
                   </footer>
                 </div>
               </div>
@@ -79,23 +79,25 @@ const Experience = () => {
           </div>
           <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
             <div className="modal-content">
-              <div className="modaltitle-Header">{selectedExperience?.title}</div>
-              <div className="modal-company">{selectedExperience?.company}</div>
-              <ul className="modal-list">
-                {selectedExperience?.description.map((desc, index) => (
-                  <li key={index}>{desc}</li>
-                ))}
-              </ul>
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  closeModal();
-                }}
-                className="modal-close-link"
-              >
-                Close
-              </a>
+              <FadeAnimation>
+                <div className="modaltitle-Header">{selectedExperience?.title}</div>
+                <div className="modal-company">{selectedExperience?.company}</div>
+                <ul className="modal-list">
+                  {selectedExperience?.description.map((desc, index) => (
+                    <li key={index}>{desc}</li>
+                  ))}
+                </ul>
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    closeModal();
+                  }}
+                  className="modal-close-link"
+                >
+                  Close
+                </a>
+              </FadeAnimation>
             </div>
           </Modal>
         </FadeAnimation>
