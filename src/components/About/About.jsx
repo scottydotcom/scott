@@ -14,12 +14,14 @@ const About = () => {
         <div className="section-header ">/ about me </div>
         <div className="about-content">
           <div className="about-blurb">
-            <p>
-              I am a Software Engineer crafting user-centric applications with strategies that unify viability and
-              sophistication, balancing intricacy and simplicity for seamless experiences.
-            </p>
-            {"Here are some technologies I have been working with:"}
             <FadeAnimation delay="100ms">
+              <p>
+                I am a Software Engineer crafting user-centric applications with strategies that unify viability and
+                sophistication, balancing intricacy and simplicity for seamless experiences.
+              </p>
+              {"Here are some technologies I have been working with:"}
+            </FadeAnimation>
+            <FadeAnimation delay="200ms">
               <ul className="tech-stack">
                 <li>
                   <SiJavascript /> Javascript
@@ -41,8 +43,10 @@ const About = () => {
                 </li>
               </ul>
             </FadeAnimation>
-            {"I'm a couch potato homebody, but these are my hobbies: "}
             <FadeAnimation delay="100ms">
+              {"I'm a couch potato homebody, but these are my hobbies: "}
+            </FadeAnimation>
+            <FadeAnimation delay="200ms">
               <ul className="hobby-stack">
                 <li>
                   <RiSwordLine /> Anime
