@@ -9,7 +9,7 @@ const Projects = () => {
     {
       title: "Midnight Koi",
       description: "Personal vscode theme designed to enhance coding focus visually.",
-      imageUrl: "src/components/assets/images/koi.png",
+      imageUrl: "src/assets/images/koi.png",
       tags: ["JSON", "Node.js", "Yeoman"],
       link: "https://github.com/scottydotcom/midnight-koi",
       open: "",
@@ -17,7 +17,7 @@ const Projects = () => {
     {
       title: "Enso",
       description: "Discord bot thats positive affirmation to users.",
-      imageUrl: "src/components/assets/images/enso.png",
+      imageUrl: "src/assets/images/enso.png",
       tags: ["JavaScript", "Node.js", "Discord.js"],
       link: "https://github.com/scottydotcom/Enso",
       open: "",
@@ -25,7 +25,7 @@ const Projects = () => {
     {
       title: "Quick Chat",
       description: "A blog that allows you to interact and talk with users in real-time.",
-      imageUrl: "src/components/assets/images/QC.png",
+      imageUrl: "src/assets/images/QC.png",
       tags: ["JavaScript", "HTML", "CSS"],
       link: "https://github.com/scottydotcom/quickchat",
       open: "https://quickchatblog.netlify.app/",
@@ -33,7 +33,7 @@ const Projects = () => {
     {
       title: "Earths Realm",
       description: "A website that shows users parks & recreation all across America.",
-      imageUrl: "src/components/assets/images/earth-realm.png",
+      imageUrl: "src/assets/images/earth-realm.png",
       tags: ["JavaScript", "HTML", "CSS"],
       link: "https://github.com/scottydotcom/earths-realm",
       open: "https://earthsrealm.netlify.app/",
