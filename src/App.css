@@ -9,11 +9,11 @@
 html,
 body {
   background-color: var(--smoke-black);
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .App {
-  font-family: "Varela Round", sans-serif ;
+  font-family: "Varela Round", sans-serif;
 }
 
 .fade-in-section {
