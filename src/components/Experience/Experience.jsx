@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./experienceStyles.css";
 import FadeAnimation from "../FadeAnimation/FadeAnimation";
 import Modal from "react-modal"; // Make sure to install react-modal
-import { RiFilePaper2Fill } from "react-icons/ri";
-import { IoDocumentText } from "react-icons/io5";
+
+import { IoDocumentText, IoCloseCircle } from "react-icons/io5";
 
 const Experience = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -95,7 +95,7 @@ const Experience = () => {
                   }}
                   className="modal-close-link"
                 >
-                  Close
+                  <IoCloseCircle className="close-button" />
                 </a>
               </FadeAnimation>
             </div>

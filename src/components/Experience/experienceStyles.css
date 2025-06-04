@@ -20,6 +20,10 @@
   font-size: 0.875rem;
 }
 
+.close-button {
+  color: var(--light-slate);
+  font-size: 1.5rem;
+}
 
 .ReactModal__Content {
   background-color: var(--ash-black); /* Card background color */
