@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./experienceStyles.css";
 import FadeAnimation from "../FadeAnimation/FadeAnimation";
-import Modal from "react-modal"; // Make sure to install react-modal
+import Modal from "react-modal";
 
 import { IoDocumentText, IoCloseCircle } from "react-icons/io5";
 
@@ -63,7 +63,6 @@ const Experience = () => {
                           e.preventDefault();
                           openModal(workData);
                         }}
-                        // className="experience-button-icon"
                       >
                         <IoDocumentText />
                       </a>

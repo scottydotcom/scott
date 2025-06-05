@@ -43,9 +43,7 @@ const About = () => {
                 </li>
               </ul>
             </FadeAnimation>
-            <FadeAnimation delay="100ms">
-              {"I'm a couch potato homebody, but these are my hobbies: "}
-            </FadeAnimation>
+            <FadeAnimation delay="100ms">{"I'm a couch potato homebody, but these are my hobbies: "}</FadeAnimation>
             <FadeAnimation delay="200ms">
               <ul className="hobby-stack">
                 <li>
@@ -75,7 +73,6 @@ const About = () => {
                 <li>
                   <RiBookMarkedLine /> Reading
                 </li>
-                {/* lifestyle, techie */}
               </ul>
             </FadeAnimation>
           </div>

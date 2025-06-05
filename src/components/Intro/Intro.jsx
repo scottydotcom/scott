@@ -9,7 +9,7 @@ const Intro = () => {
       <div className="intro-content">
         <FadeAnimation>
           <h1>
-          {/* <img src="src/components/assets/images/koi-icon.png" alt="" /> */}
+            {/* <img src="src/components/assets/images/koi-icon.png" alt="" /> */}
             hi, <span className="intro-name"> scott </span> here
           </h1>
         </FadeAnimation>
@@ -22,7 +22,6 @@ const Intro = () => {
         </FadeAnimation>
         <FadeAnimation delay="200ms">
           <div className="contact-box">
-            {/* <FadeAnimation delay="300ms"> */}
             <h3>Contact me</h3>
             <div className="contact-icons">
               <a href="https://github.com/scottydotcom" target="_blank" rel="noopener noreferrer">
@@ -32,10 +31,9 @@ const Intro = () => {
                 <FaLinkedin />
               </a>
               <a href={`mailto:${import.meta.env.VITE_EMAIL}`}>
-                <FaEnvelope  />
+                <FaEnvelope />
               </a>
             </div>
-            {/* </FadeAnimation> */}
           </div>
         </FadeAnimation>
       </div>

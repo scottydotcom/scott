@@ -4,12 +4,10 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* background: linear-gradient(to right, #1e1e2f, #5b5b98); */
   text-align: center;
   padding: -20px;
 }
 
-/* Content Box */
 .intro-content {
   max-width: 700px;
   padding: 40px;
@@ -22,7 +20,6 @@
   color: var(--cornflower-blue)
 }
 
-/* Typography */
 h1 {
   font-size: 76px;
   font-weight: bold;
@@ -44,14 +41,13 @@ p {
   color: var(--slate);
 }
 
-/* media buttons */
 .contact-box {
-  width: 205px; /* Adjust as needed */
+  width: 205px; 
   padding: 5px 15px;
   border: 1px solid var(--cornflower-blue);
   border-radius: 4px;
-  margin: 0 auto; /* Centers the box horizontally */
-  display: block; /* Ensure it behaves like a block element */
+  margin: 0 auto; 
+  display: block; 
   text-align: center;
   align-self: center;
   display: flex;
@@ -83,7 +79,6 @@ h3 {
   color: var(--light-slate);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .intro-content {
     padding: 30px;
