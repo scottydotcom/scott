@@ -18,6 +18,7 @@
   margin: 0 15px;
   font-size: 18px;
   transition: color 0.3s;
+  cursor: crosshair;
 }
 .navbar a:hover {
   color: var(--cornflower-blue);
