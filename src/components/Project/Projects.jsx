@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import "./projectStyles.css";
 import FadeAnimation from "../FadeAnimation/FadeAnimation";
 import { FaGithubSquare } from "react-icons/fa";
