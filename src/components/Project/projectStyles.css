@@ -1,8 +1,8 @@
 .project {
-  min-height: 50vh;
+  min-height: 60vh;
   margin: auto;
   max-width: 1000px;
-  padding-top: 100px;
+  padding-top: 400px;
 }
 
 .project-content {

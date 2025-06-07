@@ -1,9 +1,14 @@
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.footer p{
+.footer p {
   font-size: 1rem;
+  margin: 5px;
+}
+.footer p:last-child {
+  font-size: 0.875rem; 
 }

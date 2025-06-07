@@ -7,6 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <p>&copy; {currentyear} designed and built by scottydotcom</p>
+      <p>All rights reserved.</p>
     </footer>
   );
 };
