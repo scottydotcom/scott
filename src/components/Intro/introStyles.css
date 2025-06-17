@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 85vh;
   text-align: center;
 }
 
@@ -12,17 +12,16 @@
   max-width: 700px;
   padding: 40px;
 }
-.intro-image{
+.intro-image {
   width: 150px;
   height: 150px;
-
 }
 .intro-name {
   color: var(--cornflower-blue);
 }
 
-.highlight{
-  color: var(--cornflower-blue)
+.highlight {
+  color: var(--cornflower-blue);
 }
 
 h1 {
@@ -47,12 +46,12 @@ p {
 }
 
 .contact-box {
-  width: 205px; 
+  width: 205px;
   padding: 5px 15px;
   border: 1px solid var(--cornflower-blue);
   border-radius: 4px;
-  margin: 0 auto; 
-  display: block; 
+  margin: 0 auto;
+  display: block;
   text-align: center;
   align-self: center;
   display: flex;

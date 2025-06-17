@@ -1,9 +1,8 @@
 .project {
   display: flex;
-  min-height: 70vh; /* Reduced height to allow footer visibility */
+  min-height: 80vh; /* Reduced height to allow footer visibility */
   margin: 0 auto; /* Center horizontally */
   max-width: 1000px; /* Limit the width */
-  padding-top: 50px; /* Reduced padding */
 }
 
 .project-content {

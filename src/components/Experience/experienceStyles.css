@@ -6,7 +6,6 @@
   max-width: 1000px;
   padding-bottom: 300px;
 }
-/** to have experience card the same alignment as project cards, make the body text longer  */
 
 .experience-content {
   display: grid;
