@@ -1,9 +1,12 @@
 .experience {
-  min-height: 50vh;
-  margin: auto;
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  margin: 0 auto;
   max-width: 1000px;
-  padding-top: 400px;
+  padding-bottom: 300px;
 }
+/** to have experience card the same alignment as project cards, make the body text longer  */
 
 .experience-content {
   display: grid;

@@ -3,7 +3,7 @@
   backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,4 +22,10 @@
 }
 .navbar a:hover {
   color: var(--cornflower-blue);
+}
+
+.navbar .active {
+  font-weight: bold; /* Example style */
+  color: var(--cornflower-blue); /* Example style */
+  text-shadow: 0 0 5px rgba(0, 0, 255, 0.7), 0 0 10px rgba(0, 0, 255, 0.5); 
 }

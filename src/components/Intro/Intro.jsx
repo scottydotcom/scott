@@ -10,7 +10,8 @@ const Intro = () => {
         <FadeAnimation>
           <h1>
             <div className="image-container">
-              <img src="public/tangerine.png" alt="" className="intro-image" />
+              {/* <img src="public/logo.png" alt="" className="intro-image" /> */}
+              <img src="tangerine.png" alt="" className="intro-image" />
             </div>
             hi, <span className="intro-name"> scott </span> here
           </h1>

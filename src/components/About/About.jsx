@@ -43,7 +43,7 @@ const About = () => {
                 </li>
               </ul>
             </FadeAnimation>
-            <FadeAnimation delay="100ms">{"I'm a couch potato homebody, but these are my hobbies: "}</FadeAnimation>
+            <FadeAnimation delay="100ms">{"I'm a homebody, but these are my hobbies: "}</FadeAnimation>
             <FadeAnimation delay="200ms">
               <ul className="hobby-stack">
                 <li>
@@ -77,7 +77,7 @@ const About = () => {
             </FadeAnimation>
           </div>
           <div className="about-selfie">
-            <img alt="it me scott" src={"https://avatars.githubusercontent.com/u/91393924?v=4"} />
+            <img alt="it me scott" src={"src/assets/images/me.png"} />
           </div>
         </div>
       </FadeAnimation>
