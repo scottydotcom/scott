@@ -27,5 +27,5 @@
 .navbar .active {
   font-weight: bold; /* Example style */
   color: var(--cornflower-blue); /* Example style */
-  text-shadow: 0 0 5px rgba(0, 0, 255, 0.7), 0 0 10px rgba(0, 0, 255, 0.5); 
+  text-shadow: 0 0 5px rgba(0, 0, 255, 0.7), 0 0 10px rgba(0, 0, 255, 0.5);
 }

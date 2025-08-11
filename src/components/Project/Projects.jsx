@@ -12,7 +12,7 @@ const Projects = () => {
       imageUrl: "src/assets/images/koi.png",
       tags: ["JSON", "Node.js", "Yeoman"],
       link: "https://github.com/scottydotcom/midnight-koi",
-      open: "",
+      open: "https://marketplace.visualstudio.com/items?itemName=scottydotcom-midnight-koi-theme.midnight-koi",
     },
     {
       title: "Enso",
@@ -53,14 +53,14 @@ const Projects = () => {
                   <header className="card-header">
                     <span>{project.title}</span>
                     <div className="icon-container">
-                      {project.open && (
-                        <a href={project.open} target="_blank" rel="noopener noreferrer" className="icon">
-                          <TbBrowserMaximize />
-                        </a>
-                      )}
                       {project.link && (
                         <a href={project.link} target="_blank" rel="noopener noreferrer" className="icon">
                           <FaGithubSquare />
+                        </a>
+                      )}
+                      {project.open && (
+                        <a href={project.open} target="_blank" rel="noopener noreferrer" className="icon">
+                          <TbBrowserMaximize />
                         </a>
                       )}
                     </div>
