@@ -14,7 +14,7 @@ const Experience = () => {
       company: "LinkedIn",
       title: "Data Analytics Engineer Intern",
       duration: "JUL 2024 - JAN 2025",
-      imageUrl: "public/linkedin.png",
+      imageUrl: "/public//linkedin.png",
       description: [
         "Led project to integrate Git with organization’s web-based IDE to improve developer experience and productivity.",
         "Created a centralized folder structure for all projects to improve organization and accessibility, allowing developers to easily find and access their projects and collaborate more effectively.",
@@ -26,7 +26,7 @@ const Experience = () => {
       company: "Code with Craig",
       title: "Front-End Freelance Developer",
       duration: "MAY 2024 - JAN 2025",
-      imageUrl: "public/cwc.png",
+      imageUrl: "/public//cwc.png",
       description: [
         "Actively contributing to the development and enhancement of my Bootcamp instructor's website, focusing on creating clear and engaging examples of JavaScript, HTML, and CSS.",
         "Coordinated with the instructor to create a seamless and visually appealing site layout, improving user experience and navigation.",

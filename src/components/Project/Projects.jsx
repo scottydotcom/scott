@@ -4,12 +4,13 @@ import FadeAnimation from "../FadeAnimation/FadeAnimation";
 import { FaGithubSquare } from "react-icons/fa";
 import { TbBrowserMaximize } from "react-icons/tb";
 
+
 const Projects = () => {
   const projectDetails = [
     {
       title: "Midnight Koi",
       description: "Personal vscode theme designed to enhance coding focus visually.",
-      imageUrl: "public/koi.png",
+      imageUrl: "/public//koi.png",
       tags: ["JSON", "Node.js", "Yeoman"],
       link: "https://github.com/scottydotcom/midnight-koi",
       open: "https://marketplace.visualstudio.com/items?itemName=scottydotcom-midnight-koi-theme.midnight-koi",
@@ -17,7 +18,7 @@ const Projects = () => {
     {
       title: "Enso",
       description: "Discord bot thats positive affirmation to users.",
-      imageUrl: "public/enso.png",
+      imageUrl: "/public//enso.png",
       tags: ["JavaScript", "Node.js", "Discord.js"],
       link: "https://github.com/scottydotcom/Enso",
       open: "",
@@ -25,7 +26,7 @@ const Projects = () => {
     {
       title: "Quick Chat",
       description: "A blog that allows you to interact and talk with users in real-time.",
-      imageUrl: "public/QC.png",
+      imageUrl: "/public//QC.png",
       tags: ["JavaScript", "HTML", "CSS"],
       link: "https://github.com/scottydotcom/quickchat",
       open: "https://quickchatblog.netlify.app/",
@@ -33,7 +34,7 @@ const Projects = () => {
     {
       title: "Earths Realm",
       description: "A website that shows users parks & recreation all across America.",
-      imageUrl: "public/earth-realm.png",
+      imageUrl: "/public//earth-realm.png",
       tags: ["JavaScript", "HTML", "CSS"],
       link: "https://github.com/scottydotcom/earths-realm",
       open: "https://earthsrealm.netlify.app/",
